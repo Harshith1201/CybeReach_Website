@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap'); */
+* {
+    box-sizing: border-box;
+    border-radius: 1vw;
+  }
+
+  img{
+    width: 20vw;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+
+    background-image: linear-gradient(75deg,#a4123f,#a4123f, navy);
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+  }
+  
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover{
+    color: red;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    background-image: url(../images/geo.jpg);
+    background-size: 100% 100%;
+  }
+
+  #geo{
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-size: 2.5vw;
+  }
+
+  #quot{
+    font-size: 2.1rem;
+    color: #a4123f;
+  }
+
+  p, li{
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.78;
+    font-family: 'Lora', serif;
+    text-align: justify;
+  }
+  
+  .card , .index-link{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .index-link{
+    background-color: #a4123f;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #alink{
+    color: white;
+  }
+
+  .index-link:hover{
+    background-color: #0c3a6f;
+  }
+
+  
+  /* Footer */
+  .footer {
+    margin-top: 100px;
+    color: #ffffff; /* White */
+    padding: 30px 0;
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .footer-content {
+    color: #141115; /* Dark grayish black */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .follow-us, .contact-us {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .follow-us h3, .contact-us h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons img {
+    width: 30px; /* Adjust the size as needed */
+    height: 30px;
+  }
+  
+  .email-icon img {
+    width: 25px; /* Adjust the size as needed */
+    height: 25px;
+    margin-right: 10px;
+  }
+  
+  .email-icon a {
+    color: black; /* White */
+    text-decoration: none;
+  }
+  
+  .copyright {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Custom footer styles */
+  .white-footer {
+    background-color: white;
+    color: #141115; /* Dark grayish black */
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+     /* Apply rounded edges to the top-left corner */
+    overflow: hidden; /* Ensure content does not overflow rounded edges */
+  }
+  
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }

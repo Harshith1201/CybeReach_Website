@@ -1,0 +1,265 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap');
+/* Body styles */
+body {
+  background: linear-gradient(135deg, #CC0001, #AF0000, #003A6D, #07264e, #061735);
+}
+
+body, p {
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font to paragraphs and body text */
+  font-weight: 500; /* Use regular (400) weight */
+  font-size: 16px; /* Adjust font size as needed */
+  line-height: 1.6; /* Adjust line height for readability */
+  color: #333; /* Adjust color if needed */
+}
+
+main h1 {
+  font-family: 'Raleway', sans-serif; /* Apply Raleway font to headers and main titles */
+  font-weight: 700; /* Use bold (700) weight */
+  font-size: 80px; /* Adjust font size as needed */
+  margin-bottom: 30px;
+  color: #FFFFFF; /* Adjust color if needed */
+}
+
+.navbar {
+  position: fixed; /* Keep the position fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure navbar is above other content */
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list.active {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 75px;
+  left: -5px;
+  width: 100%;
+  background-color: #1D3670;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 20px;
+  z-index: 1;
+  padding-left: 2px;
+}
+
+
+
+.logo-container img {
+  height: 60px; /* Increased logo size to 60px */
+  margin-right: 10px;
+}
+
+
+.menu-icon {
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-list a:hover {
+  color: #FFD700; /* Gold/Yellow */
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #1D3670;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 3px; /* Adjust the margin as needed */
+    z-index: 1;
+  }
+
+  
+
+  .menu-icon {
+    display: block;
+  }
+  
+}
+
+/* Main section styles */
+main {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.scam-story {
+  display: flex; /* Change display property to flex */
+  flex-direction: column; /* Align content vertically */
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  max-width: fit-content; /* Adjust container width to fit content */
+}
+
+.scam-story img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.scam-story img {
+  width: 100vw; /* Maintain the width */
+  height: 228px; /* Set the height to maintain 16:9 aspect ratio for a width of 405px */
+  object-fit: cover; /* Crop the image to cover the container */
+}
+
+
+.scam-story:hover {
+  transform: translateY(-5px);
+}
+
+
+
+.scam-story:hover img {
+  transform: scale(1.05);
+}
+
+.scam-story .content {
+  padding: 20px;
+}
+
+.scam-story h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #07264e;
+}
+
+.scam-story p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.read-more {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  background-color: #003A6D;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.read-more:hover {
+  background-color: #061735;
+}
+
+.footer {
+  color: black;
+  padding: 30px 0;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.footer-content {
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.follow-us,
+.contact-us {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.more {
+  color:#fff;
+}
+
+.follow-us h3,
+.contact-us h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img {
+  width: 30px; /* Adjust the size as needed */
+  height: 30px;
+}
+
+.email-icon img {
+  width: 25px; /* Adjust the size as needed */
+  height: 25px;
+  margin-right: 10px;
+}
+
+.email-icon a {
+  color: black;
+  text-decoration: none;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Custom footer styles */
+.white-footer {
+  background-color: #1E90FF; /* Set background color to white */
+  border-top-left-radius: 40px; /* Apply rounded edges to the top-left corner */
+  overflow: hidden; /* Ensure content does not overflow rounded edges */
+}
+
+

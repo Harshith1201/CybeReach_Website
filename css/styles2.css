@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #141115; /* Dark grayish black */
+  margin: 0; /* Remove default margin */
+  height: 100vh;
+}
+
+.navbar {
+  position: fixed; /* Keep the position fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure navbar is above other content */
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list.active {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 75px;
+  left: -5px;
+  width: 100%;
+  background-color: #1D3670;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 20px;
+  z-index: 1;
+  padding-left: 2px;
+}
+
+
+
+.logo-container img {
+  height: 60px; /* Increased logo size to 60px */
+  margin-right: 10px;
+}
+
+
+.menu-icon {
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-list a:hover {
+  color: #FFD700; /* Gold/Yellow */
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #1D3670;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 3px; /* Adjust the margin as needed */
+    z-index: 1;
+  }
+
+  
+
+  .menu-icon {
+    display: block;
+  }
+  
+}
+
+content {
+  background: url('../images/tanjiro.jpg') center;
+  background-size: cover;
+  height: 100vh;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+content p {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.8)); /* Apply drop shadow */
+}
+
+h1 {
+  letter-spacing: .2rem;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.8)); /* Apply drop shadow */
+  text-transform: uppercase;
+  background: black;
+  color: #ffffff;
+  padding: 15px 20px;
+  margin: 0;
+}
+
+.footer {
+  color: #ffffff; /* White */
+  padding: 30px 0;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.footer-content {
+  color: #141115; /* Dark grayish black */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.follow-us, .contact-us {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.follow-us h3, .contact-us h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img {
+  width: 30px; /* Adjust the size as needed */
+  height: 30px;
+}
+
+.email-icon img {
+  width: 25px; /* Adjust the size as needed */
+  height: 25px;
+  margin-right: 10px;
+}
+
+.email-icon a {
+  color: black; /* White */
+  text-decoration: none;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Custom footer styles */
+.white-footer {
+  margin-top: -35px;
+  background-color: #1E90FF;
+  color: #141115; /* Dark grayish black */
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px; /* Apply rounded edges to the top-left corner */
+  overflow: hidden; /* Ensure content does not overflow rounded edges */
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  header img {
+      width: 100px;
+  }
+  nav a {
+    font-size: 16px;
+  }
+}
+
+nav a {
+  font-family: 'Lato', sans-serif;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.coming-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.coming-soon h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem; /* Adjust the font size as needed */
+  color: #141115; /* Dark grayish black */
+}
+

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Reach - Cyber Calendar</title>
+    <link rel="stylesheet" href="../css/stylo.css">
+    <link rel="stylesheet" href="../css/calender1.css">
+    <link rel="stylesheet" href="../css/calender2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo-container">
+      <img src="../images/Amrita-vishwa-vidyapeetham-color (1).png" alt="Logo 1">
+      <img src="../images/Cyber Reach Logo Vector Black.png" alt="Logo 2">
+    </div>
+    <div class="menu-icon" id="menuIcon">&#9776;</div>
+    <ul class="nav-list" id="navList">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../html/projects.html">Projects</a></li>
+      <li><a href="../html/blogs.html">Blogs</a></li>
+      <li><a href="../html/aboutus.html">About Us</a></li>
+      <li><br></li>
+    </ul>
+  </div>
+
+    <main>
+        <h1>CYBER CALENDAR</h1>
+
+        <p>
+            Cyber Calendar, an initiative by CybeReach, aims to provide cyber enthusiasts with valuable insights into the rich history, current developments, and future events within the captivating domain of cybersecurity. This platform offers a comprehensive view of the evolution of cyber-related events, spanning from historical milestones to present-day advancements and future projections.
+        </p>
+
+    <div class="hero">
+      <div id="calendar"></div>
+    </div>
+    <script src="../js/script0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="../js/calender.js"></script>
+    <script src="../js/cyber-events.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#calendar').evoCalendar({
+          theme:"Midnight Blue",
+      calendarEvents: [
+      // Historical Cybersecurity Milestones
+      {
+        id: 'morris-worm',
+        name: "Morris Worm Released",
+        date: "November/2/2024",
+        description: "Anniversary of the first major Internet worm (1988) that infected 10% of Internet-connected computers",
+        type: "holiday",
+        everyYear: true,
+        color: "#ff6b6b"
+      },
+      {
+        id: 'first-computer-virus',
+        name: "First Computer Virus 'Creeper'",
+        date: "October/1/2024",
+        description: "Anniversary of the Creeper virus (1971), considered the first computer virus",
+        type: "holiday",
+        everyYear: true,
+        color: "#ff6b6b"
+      },
+      {
+        id: 'cybersecurity-awareness-month',
+        name: "Cybersecurity Awareness Month",
+        date: "October/1/2024",
+        description: "National Cybersecurity Awareness Month - promoting cybersecurity best practices",
+        type: "event",
+        everyYear: true,
+        color: "#4ecdc4"
+      },
+      {
+        id: 'data-privacy-day',
+        name: "Data Privacy Day",
+        date: "January/28/2025",
+        description: "International Data Privacy Day - raising awareness about privacy rights",
+        type: "holiday",
+        everyYear: true,
+        color: "#45b7d1"
+      },
+      {
+        id: 'safer-internet-day',
+        name: "Safer Internet Day",
+        date: "February/11/2025",
+        description: "Global initiative promoting safer and more responsible use of online technology",
+        type: "holiday",
+        everyYear: true,
+        color: "#96ceb4"
+      },
+      // Important People in Cybersecurity
+      {
+        id: 'kevin-mitnick-birthday',
+        name: "Kevin Mitnick Birthday",
+        date: "August/6/2024",
+        description: "Birthday of famous hacker turned security consultant (1963-2023)",
+        type: "event",
+        everyYear: true,
+        color: "#feca57"
+      },
+      {
+        id: 'john-mcafee-birthday',
+        name: "John McAfee Birthday",
+        date: "September/18/2024",
+        description: "Birthday of antivirus software pioneer and founder of McAfee (1945-2021)",
+        type: "event",
+        everyYear: true,
+        color: "#ff9ff3"
+      },
+      {
+        id: 'eugene-kaspersky-birthday',
+        name: "Eugene Kaspersky Birthday",
+        date: "October/4/2024",
+        description: "Birthday of Russian cybersecurity expert and founder of Kaspersky Lab (born 1965)",
+        type: "event",
+        everyYear: true,
+        color: "#ff9ff3"
+      },
+      // Major Cybersecurity Conferences 2025
+      {
+        id: 'rsa-conference-2025',
+        name: "RSA Conference 2025",
+        date: "May/6/2025",
+        description: "World's leading cybersecurity conference in San Francisco",
+        type: "event",
+        color: "#54a0ff"
+      },
+      {
+        id: 'black-hat-usa-2025',
+        name: "Black Hat USA 2025",
+        date: "August/2/2025",
+        description: "Premier cybersecurity event for information security professionals",
+        type: "event",
+        color: "#2f3542"
+      },
+      {
+        id: 'defcon-33',
+        name: "DEF CON 33",
+        date: "August/7/2025",
+        description: "World's largest hacker convention in Las Vegas",
+        type: "event",
+        color: "#ff3838"
+      },
+      // Recent Cybersecurity Awareness Events
+      {
+        id: 'world-password-day',
+        name: "World Password Day",
+        date: "May/2/2025",
+        description: "Annual event promoting better password security practices",
+        type: "holiday",
+        everyYear: true,
+        color: "#3742fa"
+      },
+      {
+        id: 'anti-phishing-day',
+        name: "Anti-Phishing Working Group Day",
+        date: "June/15/2025",
+        description: "Awareness day for phishing prevention and education",
+        type: "holiday",
+        everyYear: true,
+        color: "#2ed573"
+      },
+      {
+        id: 'world-backup-day',
+        name: "World Backup Day",
+        date: "March/31/2025",
+        description: "Annual reminder to backup important data and prepare for potential data loss",
+        type: "holiday",
+        everyYear: true,
+        color: "#ff6b6b"
+      },
+      {
+        id: 'bsides-sf-2025',
+        name: "BSides San Francisco 2025",
+        date: "April/26/2025",
+        description: "Community-driven cybersecurity conference focusing on emerging threats",
+        type: "event",
+        color: "#00d2d3"
+      },
+      // Historical Cyber Attacks (Educational)
+      {
+        id: 'wannacry-anniversary',
+        name: "WannaCry Ransomware Anniversary",
+        date: "May/12/2025",
+        description: "Anniversary of the 2017 global ransomware attack (Educational)",
+        type: "event",
+        everyYear: true,
+        color: "#ff4757"
+      },
+      {
+        id: 'equifax-breach-anniversary',
+        name: "Equifax Breach Anniversary",
+        date: "September/7/2025",
+        description: "Anniversary of the 2017 Equifax data breach affecting 147 million people",
+        type: "event",
+        everyYear: true,
+        color: "#ff6348"
+      },
+      {
+        id: 'target-breach-anniversary',
+        name: "Target Data Breach Anniversary",
+        date: "December/15/2025",
+        description: "Anniversary of the 2013 Target data breach affecting 40+ million customers",
+        type: "event",
+        everyYear: true,
+        color: "#ff6348"
+      }
+    ]
+    })
+})
+    </script>
+
+    <footer class="footer white-footer">
+
+        <div class="footer-content">
+          <div class="follow-us">
+            <h3>Follow Us On</h3>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/cyber.reach/">
+              <img src="../images/whiteinstagram.png" alt="Instagram"> </a>
+              <a href="https://www.linkedin.com/showcase/cyber-reach/about/">
+              <img src="../images/icons8-linkedin-30.png" alt="LinkedIn"></a>
+            </div>
+          </div>
+          <div class="contact-us">
+            <h3>Contact Us</h3>
+            <div class="email-icon">
+              <img src="../images/icons8-email-30 (2).png" alt="Email">
+              <a href="mailto:cybereach@gmail.com">cybereach@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2024 CybeReach. All Rights Reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>
