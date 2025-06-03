@@ -9,7 +9,7 @@ A modern cybersecurity website featuring an enhanced UI, comprehensive cyber cal
 
 ## 🌟 Live Demo
 
-🔗 **[Visit CybeReach Website]([https://cybereach.github.io/CybeReach/](https://harshith1201.github.io/CybeReach_Website/))** 
+🔗 **[Visit CybeReach Website]((https://harshith1201.github.io/CybeReach_Website/)** 
 
 ## 📸 Screenshots
 
